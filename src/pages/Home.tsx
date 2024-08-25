@@ -28,10 +28,10 @@ const customTheme: CustomFlowbiteTheme = {
   },
 };
 
-const day1 = new Date("2023-08-31");
-const day2 = new Date("2023-09-01");
-const day3 = new Date("2023-09-02");
-const end = new Date("2023-09-03");
+const day1 = new Date("2024-08-27");
+const day2 = new Date("2024-08-28");
+const day3 = new Date("2024-08-29");
+const end = new Date("2024-08-30");
 const current = new Date();
 
 const line1 = "NITI NISPATTI"
@@ -66,7 +66,10 @@ const Home: FC = () => {
           viewport={{ once: true }}
           whileInView={{ opacity: 1 }}>
           <NavBaru />
-          <header className="flex flex-col items-center justify-center text-center h-screen">
+          <header className="flex flex-col items-center justify-center text-center h-screen overflow-x-hidden">
+            <img src="/images/awan1.png" alt="" className="hidden lg:absolute -left-60 top-12 w-2/5 z-9" />
+            <img src="/images/awan2.png" alt="" className="hidden lg:absolute right-0 bottom-20 w-2/5 z-9" />
+            <img src="/images/ornamen-atas.png" alt="" />
             <motion.h1
               className="font-astrid text-7xl text-[#531C9C] [text-shadow:_3px_3px_3px_rgb(255_255_255_/_40%)]"
               variants={sentence}
@@ -88,8 +91,8 @@ const Home: FC = () => {
                   </motion.span>
                 )
               })}
-
             </motion.h1>
+            <img src="/images/ornamen-bawah.png" alt="" />
           </header>
         </motion.div>
         <section className="h-fit">
@@ -105,7 +108,7 @@ const Home: FC = () => {
                         Day 1
                       </Timeline.Title>
                       <Timeline.Body className="font-montserrat text-xl text-[#531C9C] pt-2">
-                        31 Agustus 2023
+                        27 Agustus 2024
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>
@@ -116,7 +119,7 @@ const Home: FC = () => {
                         Day 2
                       </Timeline.Title>
                       <Timeline.Body className="font-montserrat text-xl text-[#531C9C] pt-2">
-                        01 September 2023
+                        28 Agustus 2024
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>
@@ -126,8 +129,8 @@ const Home: FC = () => {
                       <Timeline.Title className="font-astrid text-5xl text-[#531C9C]">
                         Day 3
                       </Timeline.Title>
-                      <Timeline.Body className="font-montserrat text-2xl text-[#531C9C] pt-2">
-                        02 September 2023
+                      <Timeline.Body className="font-montserrat text-xl text-[#531C9C] pt-2">
+                        29 Agustus 2024
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>
@@ -140,33 +143,33 @@ const Home: FC = () => {
                   <Timeline.Item className={'w-2/3 mb-20' + (day1.getTime() < current.getTime() && current.getTime() < day2.getTime() ? 'animate-pulse' : '') }>
                     <Timeline.Point icon={HiCalendar} />
                     <Timeline.Content className="mt-6">
-                      <Timeline.Title className="font-festivalBudaya text-5xl text-[#531C9C]">
+                      <Timeline.Title className="font-astrid text-5xl text-[#531C9C]">
                         Day 1
                       </Timeline.Title>
-                      <Timeline.Body className="font-montserrat text-2xl text-[#531C9C]">
-                        31 Agustus 2023
+                      <Timeline.Body className="font-montserrat text-xl text-[#531C9C]">
+                        27 Agustus 2024
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>
                   <Timeline.Item className={'w-2/3 mb-20' + (day2.getTime() < current.getTime() && current.getTime() < day3.getTime() ? 'animate-pulse' : '') }>
                     <Timeline.Point icon={HiCalendar} />
                     <Timeline.Content className="mt-6">
-                      <Timeline.Title className="font-festivalBudaya text-5xl text-[#531C9C]">
+                      <Timeline.Title className="font-astrid text-5xl text-[#531C9C]">
                         Day 2
                       </Timeline.Title>
-                      <Timeline.Body className="font-montserrat text-2xl text-[#531C9C]">
-                        01 September 2023
+                      <Timeline.Body className="font-montserrat text-xl text-[#531C9C]">
+                        28 Agustus 2024
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>
                   <Timeline.Item className={'w-2/3 mb-20' + (day3.getTime() < current.getTime() && current.getTime() < end.getTime() ? 'animate-pulse' : '') }>
                     <Timeline.Point icon={HiCalendar} />
                     <Timeline.Content className="mt-6">
-                      <Timeline.Title className="font-festivalBudaya text-5xl text-[#531C9C]">
+                      <Timeline.Title className="font-astrid text-5xl text-[#531C9C]">
                         Day 3
                       </Timeline.Title>
-                      <Timeline.Body className="font-montserrat text-2xl text-[#531C9C]">
-                        02 September 2023
+                      <Timeline.Body className="font-montserrat text-xl text-[#531C9C]">
+                        29 Agustus 2024
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>
@@ -175,43 +178,15 @@ const Home: FC = () => {
             </div>
           </AnimateShow>
         </section>
-        {/* <section className="">
-          <AnimateShow className="flex flex-col h-fit lg:h-screen items-center justify-start text-center">
-            <h2 className="font-lemonMilk text-7xl text-[#f1eac3]">MATERI</h2>
-            <Swiper
-              slidesPerView="auto"
-              breakpoints={{
-                1024:{
-                  slidesPerView: 3,
-                }
-              }}
-              autoplay={{ delay: 2000 }}
-              centeredSlides
-              className="mySwiper w-3/4 my-12"
-              coverflowEffect={{
-                rotate: 0,
-                stretch: -50,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false,
-              }}
-              effect="coverflow"
-              grabCursor={false}
-              modules={[EffectCoverflow, Autoplay]}
-              
-            >
-              <SwiperSlide>
-                <img src="images/materi1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="images/materi1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="images/materi1.jpg" />
-              </SwiperSlide>
-            </Swiper>
+        <section className="h-fit">
+          <AnimateShow className="flex flex-col h-screen items-center justify-center text-center">
+            <h2 className="font-sinerva text-5xl text-[#531C9C] [text-shadow:_3px_3px_3px_rgb(255_255_255_/_40%)]">TUGAS DAN PERATURAN</h2>
+            <div className="flex gap-10 justify-center items-center py-20">
+              <a href="/documents/Peraturan-dan-Poin-Inisiasi.pdf" target="_blank" download className="p-5 border-2 border-[#9C9CFF] rounded-full font-sinerva text-xl font-bold bg-[#6868C8] text-white hover:bg-white hover:text-[#6868C8]">Download Aturan dan Poin Inisiasi</a>
+              <a href="/tugas" target="_blank" className="p-5 border-2 border-[#9C9CFF] rounded-full font-sinerva text-xl font-bold bg-[#6868C8] text-white hover:bg-white hover:text-[#6868C8]">Cek Tugas</a>
+            </div>
           </AnimateShow>
-        </section> */}
+        </section>
       </div>
       <Footer />
     </>

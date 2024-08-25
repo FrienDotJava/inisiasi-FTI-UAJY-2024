@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
-import { SiInstagram, SiLine, SiGmail } from "react-icons/si";
+import { SiInstagram, SiLine, SiGmail, SiYoutube } from "react-icons/si";
 
 const Footer: FC = () => {
   return (
@@ -34,19 +34,19 @@ const Footer: FC = () => {
                 Instagram
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@inisiasiftiuajy"
                 className="flex w-fit items-center gap-2 font-montserrat transition hover:text-gray-700"
               >
-                <SiLine />
-                Line
+                <SiYoutube />
+                Youtube
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="flex w-fit items-center gap-2 font-montserrat transition hover:text-gray-700"
               >
                 <SiGmail />
                 Gmail
-              </a>
+              </a> */}
             </div>
             <div className="flex flex-col gap-2 ">
               {/* <img src="/images/map.png" alt="peta-img" className="w-1/2" /> */}

@@ -19,17 +19,17 @@ const Media: FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-6">
-          <div className="font-sinerva text-[#9C9CFF] text-2xl p-4 rounded-full bg-[#FFFADA]">TWIBBON</div>
-          <a href="https://twb.nz/inisiasifti2024" target="_blank" rel="noopener noreferrer" className="p-5 border-2 border-[#9C9CFF] rounded-lg font-montserrat text-md bg-[#FFF8CC]">Link Twibbon</a>
+          {/* <div className="font-sinerva text-[#9C9CFF] text-2xl p-4 rounded-full bg-[#FFFADA]">TWIBBON</div> */}
+          <a href="https://twb.nz/inisiasifti2024" target="_blank" rel="noopener noreferrer" className="p-5 border-2 border-[#9C9CFF] rounded-full font-sinerva text-xl font-bold bg-[#6868C8] hover:bg-white hover:text-[#6868C8] text-white">Link Twibbon</a>
         </div>
         <div className="flex flex-col lg:flex-row p-10 gap-9 justify-between w-3/4">
           <div className="flex flex-col items-center gap-3 lg:gap-6">
-            <div className="font-sinerva text-[#9C9CFF] text-2xl p-4 rounded-full bg-[#FFFADA]">YEL-YEL</div>
-            <a href="https://www.instagram.com/stories/highlights/18034773605321291/" target="_blank" rel="noopener noreferrer" className="p-5 border-2 border-[#9C9CFF] rounded-lg font-montserrat text-md bg-[#FFF8CC]">Link Yel-yel</a>
+            {/* <div className="font-sinerva text-[#9C9CFF] text-2xl p-4 rounded-full bg-[#FFFADA]">YEL-YEL</div> */}
+            <a href="https://www.instagram.com/stories/highlights/18034773605321291/" target="_blank" rel="noopener noreferrer" className="p-5 border-2 border-[#9C9CFF] rounded-full font-sinerva text-xl font-bold bg-[#6868C8] hover:bg-white hover:text-[#6868C8] text-white">Link Yel-yel</a>
           </div>
           <div className="flex flex-col items-center gap-3 lg:gap-6">
-            <div className="font-sinerva text-[#9C9CFF] text-2xl p-4 rounded-full bg-[#FFFADA]">JARGON</div>
-            <a href="https://www.instagram.com/stories/highlights/18069831871577640/" target="_blank" rel="noopener noreferrer" className="p-5 border-2 border-[#9C9CFF] rounded-lg font-montserrat text-md bg-[#FFF8CC]">Link Jargon</a>
+            {/* <div className="font-sinerva text-[#9C9CFF] text-2xl p-4 rounded-full bg-[#FFFADA]">JARGON</div> */}
+            <a href="https://www.instagram.com/stories/highlights/18069831871577640/" target="_blank" rel="noopener noreferrer" className="p-5 border-2 border-[#9C9CFF] rounded-full font-sinerva text-xl font-bold bg-[#6868C8] hover:bg-white hover:text-[#6868C8] text-white">Link Jargon</a>
           </div>
         </div>
       </div>
